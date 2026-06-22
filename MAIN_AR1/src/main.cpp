@@ -326,7 +326,7 @@ void szivattyuMain(){
             szivattyuSide = elegViz && wcGombLenyomva;
             break;
         case 2:
-            digitalWrite(szivattyu, szivattyuSide ? HIGH : LOW);
+            digitalWrite(szivattyu, szivattyuSide ? LOW : HIGH);
             break;
     }
 
@@ -393,7 +393,7 @@ void klimaMain(){
             klimaSide = rendszerMod == 3;
             break;
         case 2:
-            digitalWrite(klima, klimaSide ? HIGH : LOW);
+            digitalWrite(klima, klimaSide ? LOW : HIGH);
             break;
     }
 
@@ -419,7 +419,7 @@ void paraelszivoMain(){
             paraelszivoSide = belsoParatartalom > 30;
             break;
         case 2:
-            digitalWrite(paraelszivoRele, paraelszivoSide ? HIGH : LOW);
+            digitalWrite(paraelszivoRele, paraelszivoSide ? LOW : HIGH);
             break;
     }
 
@@ -525,6 +525,11 @@ void setup(){
     for (int i = 0; i < 2; i++) {mozgaserzekeloMain();}     // 6. mozgásérzékelő
     for (int i = 0; i < 2; i++) {fenyerzekeloMain();}       // 7. fényérzékelő
     serialMain();                                           // 8. SERIAL
+
+    // eszközök beállítása
+    digitalWrite(klima, HIGH);
+    digitalWrite(szivattyu, HIGH);
+    digitalWrite(paraelszivoRele, HIGH);
 
     // változók
     homerokStep = 1; // hőmérők

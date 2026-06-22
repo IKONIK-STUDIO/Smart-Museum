@@ -363,7 +363,7 @@ void szivattyuMain(){
             szivattyuIf1Side = (vizHomerseklet > 23 && vizHomerseklet < 28 && kellMelegViz);
             break;
         case 2:
-            digitalWrite(szivattyuNap, szivattyuIf1Side ? HIGH : LOW);
+            digitalWrite(szivattyuNap, szivattyuIf1Side ? LOW : HIGH);
             break;
     }
 
@@ -442,6 +442,9 @@ void setup(){
     pinMode(napelemLed, OUTPUT);
     pinMode(szeleromuLed, OUTPUT);
     pinMode(szivattyuNap, OUTPUT);
+
+    // eszközök beállítása
+    digitalWrite(szivattyuNap, HIGH);
 
     // változók
     napelemStep = 1; // napelem

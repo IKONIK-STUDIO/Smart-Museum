@@ -258,7 +258,7 @@ void homersekletKezelesMain(){
 void wcMain(){
     switch(wcStep){
         case 1:
-            wcSide = digitalRead(wcGomb) == HIGH;
+            wcSide = digitalRead(wcGomb) == LOW;
             break;
         case 2:
             wcGombLenyomva = wcSide;
@@ -310,7 +310,7 @@ void mozgaserzekeloMain(){
 void fenyerzekeloMain(){
     switch(fenyerzekeloStep){
         case 1:
-            fenyerzekeloSide = analogRead(fenyerzekelo) > 500;
+            fenyerzekeloSide = digitalRead(fenyerzekelo);
             break;
         case 2:
             kevesFeny = fenyerzekeloSide;
@@ -511,7 +511,7 @@ void setup(){
     pinMode(hangszoro, OUTPUT);
 
     pinMode(vizszintSzenzor, INPUT);
-    pinMode(wcGomb, INPUT);
+    pinMode(wcGomb, INPUT_PULLUP);
     pinMode(mozgaserzekelo, INPUT);
     pinMode(fusterzekelo, INPUT);
     pinMode(fenyerzekelo, INPUT);

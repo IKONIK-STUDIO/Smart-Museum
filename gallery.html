@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Intelligent Museum Protection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="container">
+            <header class="header">
+                <h1>Intelligent Museum Protection System</h1>
+                <div class="theme-selector">
+                    <select id="theme-select">
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="purple">Purple</option>
+                        <option value="red">Red</option>
+                        <option value="orange">Orange</option>
+                        <option value="pink">Pink</option>
+                    </select>
+                </div>
+            </header>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="video.html" class="nav-link">Video</a>
+                <a href="news.html" class="nav-link">News</a>
+                <a href="documentation.pdf" class="nav-link">Documentation</a>
+            </nav>
+
+            <div class="content">
+                <section class="gallery-section">
+                    <h2>System Images and Components</h2>
+                    <p>This page presents the physical model and its main subsystems. Click any image to open it in full size.</p>
+
+                    <h3>What do you see here?</h3>
+                    <p>Based on the documentation, four important parts of the system can be identified: protection, climate control, energy and display.</p>
+
+                    <div class="gallery" id="gallery-grid" aria-label="Project image gallery">
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-viewer" id="photo-viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="photo-viewer-title">
+        <div class="photo-viewer-backdrop" data-viewer-close></div>
+        <div class="photo-viewer-panel">
+            <button type="button" class="photo-viewer-close" data-viewer-close aria-label="Close photo viewer">&times;</button>
+            <button type="button" class="photo-viewer-nav photo-viewer-prev" id="photo-viewer-prev" aria-label="Previous photo">&#8249;</button>
+            <button type="button" class="photo-viewer-nav photo-viewer-next" id="photo-viewer-next" aria-label="Next photo">&#8250;</button>
+            <button type="button" class="photo-viewer-zoom" id="photo-viewer-zoom" aria-label="Toggle zoom">&#128269;</button>
+            <div class="photo-viewer-media" id="photo-viewer-media">
+                <img id="photo-viewer-image" class="photo-viewer-image" alt="">
+            </div>
+            <div class="photo-viewer-meta">
+                <h3 id="photo-viewer-title">Photo viewer</h3>
+                <p id="photo-viewer-summary" class="photo-viewer-summary"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-footnote">Website generated using AI. All the content on this site was made by humans.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

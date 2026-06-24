@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Intelligent Museum Protection System</title>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Intelligent Museum Protection System</h1>
+            <div class="theme-selector">
+                <select id="theme-select">
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </div>
+        </header>
+
+            <nav class="navigation">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="video.html" class="nav-link">Video</a>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="documentation.pdf" class="nav-link">Documentation</a>
+        </nav>
+
+        <div class="content">
+            <section class="intro-section">
+                <h2>Project Overview</h2>
+                <p>The Intelligent Museum Protection System is a WRO Future Innovators project that combines automation, security, sustainability and intelligent climate control to protect artworks and reduce energy consumption.</p>
+                <p>Motto: <strong>Artists create it, we protect it.</strong></p>
+                <div class="features">
+                    <div class="feature-item">
+                        <h3>Protection</h3>
+                        <p>Laser security, smoke detection and automated alarm handling.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Temperature Control</h3>
+                        <p>Smart decisions based on indoor and outdoor temperature and humidity.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Sustainability</h3>
+                        <p>Solar tracking, wind energy display, smart window control and efficient operation.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Two Controllers</h3>
+                        <p>Two Arduino Uno boards work together: one handles protection and climate, the other handles energy and display.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section main-functions-section">
+                <h2>Main Functions at a Glance</h2>
+                <p>The system is divided into several subsystems that work together to protect artwork, manage climate and improve energy efficiency.</p>
+                <div class="systems">
+                    <div class="system-card main-functions-card">
+                        <h3>Smart Protection</h3>
+                        <ul>
+                            <li>Laser security</li>
+                            <li>Smoke detection</li>
+                            <li>Intrusion monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="system-card main-functions-card">
+                        <h3>Smart Temperature Control</h3>
+                        <ul>
+                            <li>Indoor and outdoor temperature monitoring</li>
+                            <li>Fireplace, air conditioning or window control</li>
+                            <li>Automatic decision-making</li>
+                        </ul>
+                    </div>
+                    <div class="system-card main-functions-card">
+                        <h3>Renewable Energy</h3>
+                        <ul>
+                            <li>Solar tracking servo</li>
+                            <li>Wind and solar energy indicators</li>
+                            <li>Energy-conscious operation</li>
+                        </ul>
+                    </div>
+                    <div class="system-card main-functions-card">
+                        <h3>Water and Display</h3>
+                        <ul>
+                            <li>Water temperature measurement</li>
+                            <li>Handwashing water control</li>
+                            <li>LCD status display</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="systems-section">
+                <h2>System Architecture</h2>
+                <p>Based on the documentation and code, the project is split into two independent control systems. This improves reliability, organization and future expandability.</p>
+                <div class="systems">
+                    <div class="system-card">
+                        <h3>Arduino #1 - Protection and Climate</h3>
+                        <ul>
+                            <li>Indoor and outdoor temperature and humidity</li>
+                            <li>Motion, smoke and laser sensing</li>
+                            <li>Fireplace, air conditioning, window and lighting</li>
+                            <li>Toilet pump and vapor remover control</li>
+                            <li>Alarm and demo mode</li>
+                        </ul>
+                    </div>
+                    <div class="system-card">
+                        <h3>Arduino #2 - Energy and Display</h3>
+                        <ul>
+                            <li>LCD display and status pages</li>
+                            <li>Solar tracking servo control</li>
+                            <li>Solar panel and wind energy indication</li>
+                            <li>Water temperature and hand sensing</li>
+                            <li>Serial communication with Arduino #1</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="links-section">
+                <h2>Connect With Us</h2>
+                <p>Explore our project and stay connected with the World Robotics Olympiad community:</p>
+                <div class="links-row">
+                    <a href="https://github.com/IKONIK-STUDIO/Smart-Museum" class="link-inline" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon" aria-hidden="true">
+                            <!-- GitHub SVG -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.73-1.3-1.73-1.06-.72.08-.71.08-.71 1.18.08 1.8 1.21 1.8 1.21 1.04 1.78 2.73 1.27 3.4.97.11-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.05 11.05 0 0 1 2.92-.39c.99 0 1.98.13 2.92.39 2.22-1.5 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.42-2.69 5.4-5.25 5.68.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+                            </svg>
+                        </span>
+                        <span class="link-text">GitHub</span>
+                    </a>
+
+                    <a href="https://youtu.be/1xDdCVrG-dw?si=oE8SCc_8qN4ASQP9" class="link-inline" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon" aria-hidden="true">
+                            <!-- YouTube SVG -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.12-2.13C19.9 3.5 12 3.5 12 3.5s-7.9 0-9.38.57A3 3 0 0 0 .5 6.2C0 8.06 0 12 0 12s0 3.94.5 5.8a3 3 0 0 0 2.12 2.13C4.1 20.5 12 20.5 12 20.5s7.9 0 9.38-.57A3 3 0 0 0 23.5 17.8C24 15.94 24 12 24 12s0-3.94-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                            </svg>
+                        </span>
+                        <span class="link-text">Project Video</span>
+                    </a>
+
+                    <a href="https://wro-association.org/" class="link-inline" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon" aria-hidden="true">
+                            <!-- Globe SVG -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.93 6h-3.04a15.9 15.9 0 0 0-1.4-3.08A8 8 0 0 1 18.93 8zM12 4.07c.88 1.37 1.61 3.07 2 4.93H10c.39-1.86 1.12-3.56 2-4.93zM4.07 8A8 8 0 0 1 8.51 4.99 15.9 15.9 0 0 0 7.11 8H4.07zM4.07 16h3.04c.3 1.07.73 2.03 1.29 2.86A8 8 0 0 1 4.07 16zM12 19.93c-.88-1.37-1.61-3.07-2-4.93h4c-.39 1.86-1.12 3.56-2 4.93zM16.49 19.01c.56-.83.99-1.79 1.29-2.86h3.04a8 8 0 0 1-4.33 2.86zM16.89 14H7.11a16 16 0 0 0 0-4h9.78a16 16 0 0 0 0 4z"/>
+                            </svg>
+                        </span>
+                        <span class="link-text">WRO Global</span>
+                    </a>
+
+                    <a href="https://wro-association.org/competition/categories/#future-innovators" class="link-inline" target="_blank" rel="noopener noreferrer">
+                        <span class="link-icon" aria-hidden="true">
+                            <!-- Rocket SVG -->
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M12 2c-1.1 0-2 .9-2 2 0 .2.03.4.08.6L6.2 8.48l-4 4L2 16l2.52-.2 4-4L19.4 6.92c.2.05.4.08.6.08 1.1 0 2-.9 2-2S21.5 2 20.4 2c-1.1 0-2 .9-2 2 0 .2.03.4.08.6L12 9.5 8.92 6.42C9.2 5.88 9.6 5.4 10.08 5A6 6 0 0 1 12 2z"/>
+                            </svg>
+                        </span>
+                        <span class="link-text">Future Innovators</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="page-footnote">Website generated using AI. All the content on this site was made by humans.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
